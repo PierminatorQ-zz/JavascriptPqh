@@ -1,0 +1,11 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: darkseagreen;
+}
+
+button {
+    margin: 30px;
+    padding: 20px 30px;
+    background-color: darkkhaki;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet"  href="app/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="app/css/estilorcn.css" type="text/css">
+</head>
+<body>  
+     <div id="container">
+          <h1>Tip Calculator</h1>
+          <div id="calculator">
+              
+              <form action="">
+                  <label >Cuanto es el costo total de tu cuenta? <br>
+                  $<input type="text" id="billAmount">
+                  </label>
+                  <label >Como calificas el servicio?  <br>
+                  <select id="serviceQuality">
+                      <option value="0" disabled selected> -- Escoge una opción --</option>
+                      <option value="0.3">30% - Grandioso</option>
+                      <option value="0.2">20% - Muy bueno</option>
+                      <option value="0.15">15% - bueno </option>
+                      <option value="0.1">10% - Malo</option>
+                      <option value="0.05">5% - Terrible </option>
+                  </select>
+                  </label>
+                  <label >Cuantas personas comparten la cuenta? <br>
+                     <input type="text" id="totalPeople"> personas
+                  </label> 
+                  <button  id="calculate"  type="button" önclick="calculateTip();">Calcular¡</button>
+              </form>
+              
+          </div>           <!-- calculator -->
+          
+          
+     <div id="totalTip">
+         <sup>$</sup><span id="tip">0.00</span> 
+         <small id="each">Cada uno</small>
+         
+         </div> <!-- totalTip -->
+     </div> <!-- container -->
+<script src="app/js/script.js"></script>
+</body>
+</html>
