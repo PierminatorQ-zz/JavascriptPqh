@@ -1,27 +1,21 @@
-
-/*document.addEventListener('keydown', (event) => {
-	const keyname = event.keyCode;
-	console.log('presionaste la tecla ' + keyname)
-})
-*/
-/*
-document.addEventListener('keydown', function(press){
-	var keyname = press.keyCode;
-	console.log('keyname')
-
-
-	var obtener = document.getElementsByClassName('keynote').data-key ;
-})
-*/
-
-document.addEventListener('keydown', function(press){
-	var keyname = press.keyCode;
-	console.log(keyname);
-})
-
-var x = document.getElementsByClassName('keyname'); 
-
-function playAudio (){
-    x.play();
-   
-}
+$(document).ready(function() {
+    $(document).keydown(function(event){
+            var $codigo= event.which;
+            var $vid = document.getElementById($codigo);
+            var key = document.querySelector(`div[class="${event.which}"]`);
+            $vid.currentTime = 0 ;
+            $vid.play();
+            $(key).addClass("play");
+               setTimeout(function () { 
+               $(key).removeClass("play");
+               }, 100);
+            
+           
+        
+    });
+   /* $(document).keyup(function(){
+       
+           $("div.65").removeClass("play");
+           
+    });*/
+});
