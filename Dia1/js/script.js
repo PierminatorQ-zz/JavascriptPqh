@@ -13,9 +13,5 @@ $(document).ready(function() {
            
         
     });
-   /* $(document).keyup(function(){
-       
-           $("div.65").removeClass("play");
-           
-    });*/
+   
 });
