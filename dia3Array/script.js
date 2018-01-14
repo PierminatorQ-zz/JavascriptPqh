@@ -11,16 +11,15 @@ var resp = prompt ("Qué deseas hacer?");
       arrai.push(insert);
       
     } else if ( resp == "list"){
-      arrai.forEach(function (este, i){
-       		console.log("***********");
+    	console.log("***********");
+      	   	arrai.forEach(function (este, i){
        		console.log(i + ": " + este);
        		console.log("***********");	
     	});
       
     } else if ( resp == "delete"){
-    	
-    	arrai.forEach(function (este, i){
-       		console.log("***********");
+    	console.log("***********");
+    		arrai.forEach(function (este, i){
        		console.log(i + ": " + este);
        		console.log("***********");	
     	});
