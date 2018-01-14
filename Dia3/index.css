@@ -61,6 +61,7 @@
     /* transition: all 0.5s; */
     -webkit-transition-timing-function: cubic-bezier(0, 1.69, 0.58, 1);
     transition-timing-function: cubic-bezier(0, 1.69, 0.58, 1);
+    
 
 }
 
