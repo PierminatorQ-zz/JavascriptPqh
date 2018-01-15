@@ -4,7 +4,7 @@ var probe = document.querySelector(".prueba").value;
 
 
 // Actualiza el jugando hasta 
-setInterval (function(){ verify()},500);
+//setInterval (function(){ verify()},500);
 
 function verify() {
 var probe = document.querySelector(".prueba");
