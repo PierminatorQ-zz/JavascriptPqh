@@ -1,0 +1,46 @@
+html {
+  font-size: 18px;
+
+}
+body,html {
+  margin: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.marcador{
+  margin:auto;
+  
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: bold;
+  color:black;
+  
+}
+
+.botonera{
+  margin-bottom: 20px;
+  padding: 20px 0px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+select {
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+#prueba1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color:white;
+}
+
+.warning {
+  color :green;
+}
