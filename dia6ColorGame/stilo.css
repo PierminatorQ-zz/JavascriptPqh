@@ -1,0 +1,11 @@
+.container {
+ 
+}
+
+.cards {
+  width:200px;
+  height: 200px;
+  background: rgb(199, 0, 57);
+  border: 1px solid black;
+  display:inline-block;
+}
