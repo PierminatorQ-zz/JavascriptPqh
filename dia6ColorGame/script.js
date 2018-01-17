@@ -189,6 +189,6 @@ var msj2 = document.querySelector("p");
 msj2.innerHTML = "Elige un Color"	
 
 var fondo3 = document.querySelector("#tap");
-fondo3.style.background= "cyan";
+fondo3.style.background= "#FF6B89";
 
 }
