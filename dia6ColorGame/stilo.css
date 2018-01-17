@@ -1,6 +1,9 @@
-.container {
- 
+.conth1 {
+ background:cyan;
 }
+
+h1 { 
+color:white; }
 
 .cards {
   width:200px;
@@ -12,5 +15,10 @@
 }
 
 .fade {
-	opacity: 0;
+	display:none;
 }
+
+.elemal {
+	display:none;
+}
+

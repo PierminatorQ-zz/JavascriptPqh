@@ -3,6 +3,8 @@
 var easyHard= true;
 reset()
 var newarray = [];
+var pick6 ;
+var pick3 ;
  // true para hard, false para easy
 
 
@@ -12,6 +14,7 @@ var btn = document.querySelector(".btnhard");
 btn.addEventListener("click", function(){
 hardflow();
 reset();
+desverifica();
 
 
 });
@@ -20,6 +23,7 @@ var btn = document.querySelector(".btneasy");
 btn.addEventListener("click", function(){
 easyflow();
 reset();
+desverifica();
 
 
 });
@@ -27,6 +31,7 @@ reset();
 var btn = document.querySelector(".newcol");
 btn.addEventListener("click", function(){
 reset();
+desverifica();
 
 });
 
@@ -95,11 +100,14 @@ var wintitle = document.querySelector("h1");
 
 if ( easyHard === true) {
 var elige = newarray;
-console.log(elige);
 var choo = Math.floor(Math.random()*elige.length);
 var nomber = elige[choo];
 elige.splice(choo, 0);                     
 wintitle.innerHTML =nomber;
+console.log(newarray);
+console.log(elige3);
+
+
 
 //return nomber
 
@@ -107,34 +115,52 @@ wintitle.innerHTML =nomber;
 } 
 
 else if ( easyHard === false){
-var elige3 = newarray.splice(3,3);
-//console.log(elige3);
+var elige3 = newarray.splice(0,3);
 var choo3 = Math.floor(Math.random()*elige3.length);
 var nomber3 = elige3[choo3];
 elige3.splice(choo3, 0);  
-wintitle.innerHTML =nomber3;                 
+wintitle.innerHTML =nomber3; 
+console.log(elige3);
+pick3 = nomber3;                
 return nomber3
 
 }
 
 
 
+};  //reset
 
-};
-
-
-/*
-function verifica(elem){
-var prub = "c" + elem;
-var cuadra = document.getElementsByClassName(prub);
-var stil = cuadra.getComputedStyle.opacity;
-
-console.log(stil);
-
-}
+var elegido;
 
 
-*/
+function desverifica(e){
+var bord=document.getElementsByClassName("cards");
+for ( i=0;i< bord.length ; i++){
+bord[i].classList.remove("elemal");
+}; //for
+}; // desverifica
+
+
+function verifica(e){
+var elegido = e.target;
+var claseP = elegido.style.background;
+console.log("este es el 3 " + pick3);
+console.log (claseP);
+console.log("este es el 6 " + pick6);
+ 
+// if verificador
+
+ if (pick3 === claseP || pick6 === claseP ){
+console.log(" eres un ganador");
+
+ } else if (pick3 != claseP || pick6 != claseP){
+console.log ("perdiste");
+elegido.classList.add('elemal');
+
+ }//if cierre
+
+
+}; // verifica
 
 
 
