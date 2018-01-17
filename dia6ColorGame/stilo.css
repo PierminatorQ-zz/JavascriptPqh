@@ -9,10 +9,12 @@ color:white; }
 .cards {
   width:200px;
   height: 200px;
+  margin : 10px 15px;
   background: rgb(199, 0, 57);
-  border: 1px solid black;
   display:inline-block;
-  opacity: 1;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42);
+          box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42);
 }
 
 .fade {

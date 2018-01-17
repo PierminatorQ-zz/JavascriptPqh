@@ -149,7 +149,7 @@ function verifica(e){
 var elegido = e.target;
 var claseP = elegido.style.background;
 var mensaje = document.querySelector(".msj");
-var tarjetas = document.querySelectorAll(".cards");
+
 
 // if verificador
 var fondo = document.querySelector(".conth1");
@@ -157,13 +157,13 @@ var verdad= false;
  if (pick6 == claseP){
 fondo.style.background= claseP;
 mensaje.innerHTML = "GANASTE !!!"
-tarjetas.style.background=claseP;
+colorganador();
 verdad = true;
 
  } else if (pick3 == claseP){
 fondo.style.background= claseP;
 mensaje.innerHTML = "GANASTE !!!"
-tarjetas.style.background = claseP;
+colorganador();
 verdad = true;
 
  } else { 
@@ -171,6 +171,14 @@ verdad = true;
 			mensaje.innerHTML = "Intentalo de nuevo"
   
  }//if cierre
+
+
+function colorganador(e){
+var bord1=document.getElementsByClassName("cards");
+for ( i=0;i< bord1.length ; i++){
+bord1[i].style.background= claseP;
+}; //for
+};
 
 
 }; // verifica
