@@ -2,6 +2,7 @@
 
 var easyHard= true;
 reset()
+var newarray = [];
  // true para hard, false para easy
 
 
@@ -88,9 +89,9 @@ card4.style.background = newarray[3];
 card5.style.background = newarray[4];
 card6.style.background = newarray[5];
 
-//console.log(easyHard);
+// escribe el color elegido
+var wintitle = document.querySelector("h1");
 
-console.log(easyHard);
 
 if ( easyHard === true) {
 var elige = newarray;
@@ -98,17 +99,20 @@ console.log(elige);
 var choo = Math.floor(Math.random()*elige.length);
 var nomber = elige[choo];
 elige.splice(choo, 0);                     
-console.log(nomber);
-return nomber
+wintitle.innerHTML =nomber;
+
+//return nomber
 
 
-} else if ( easyHard === false){
+} 
+
+else if ( easyHard === false){
 var elige3 = newarray.splice(3,3);
-console.log(elige3);
+//console.log(elige3);
 var choo3 = Math.floor(Math.random()*elige3.length);
 var nomber3 = elige3[choo3];
 elige3.splice(choo3, 0);  
-console.log(nomber3);                   
+wintitle.innerHTML =nomber3;                 
 return nomber3
 
 }
@@ -117,3 +121,20 @@ return nomber3
 
 
 };
+
+
+/*
+function verifica(elem){
+var prub = "c" + elem;
+var cuadra = document.getElementsByClassName(prub);
+var stil = cuadra.getComputedStyle.opacity;
+
+console.log(stil);
+
+}
+
+
+*/
+
+
+
