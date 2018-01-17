@@ -8,4 +8,9 @@
   background: rgb(199, 0, 57);
   border: 1px solid black;
   display:inline-block;
+  opacity: 1;
+}
+
+.fade {
+	opacity: 0;
 }

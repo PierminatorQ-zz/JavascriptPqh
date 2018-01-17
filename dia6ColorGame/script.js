@@ -1,9 +1,24 @@
 
 
+var easyHard= true;
 reset()
+ // true para hard, false para easy
+
+
+// botones asignaciones
 
 var btn = document.querySelector(".btnhard");
 btn.addEventListener("click", function(){
+hardflow();
+reset();
+
+
+});
+
+var btn = document.querySelector(".btneasy");
+btn.addEventListener("click", function(){
+easyflow();
+reset();
 
 
 });
@@ -15,9 +30,28 @@ reset();
 });
 
 
+// toogle easy a hard
+
+function easyflow (){
+	document.querySelector(".c4").classList.add("fade");
+	document.querySelector(".c5").classList.add("fade");
+	document.querySelector(".c6").classList.add("fade");
+	easyHard = false;
+}
+
+function hardflow (){
+	document.querySelector(".c4").classList.remove("fade");
+	document.querySelector(".c5").classList.remove("fade");
+	document.querySelector(".c6").classList.remove("fade");
+	easyHard = true;
+}
+
+
+// aletoriedad tarjetas
+
 function reset(){
 
-var colorlarg = ["rgb(35, 244, 220)","rgb(89, 17, 60)","rgb(98, 121, 125)","rgb(163, 121, 215)","rgb(231, 127, 192)","rgb(129, 50, 230)","rgb(183, 219, 75)","rgb(67, 46, 36)","rgb(97, 147, 112)","rgb(251, 228, 43)", "rgb(236, 216, 226)", "rgb(211, 177, 119)", "rgb(41, 16, 127)", "rgb(134, 233, 158)", "rgb(232, 180, 143)", "rgb(117, 99, 116)", "rgb(74, 94, 63)", "rgb(222, 80, 84)", "rgb(49, 173, 222)", "rgb(205, 235, 7)"];
+var colorlarg = ["rgb(35, 244, 220)","rgb(89, 17, 60)","rgb(98, 121, 125)","rgb(163, 121, 215)","rgb(231, 127, 192)","rgb(129, 50, 230)","rgb(34, 64, 191)","rgb(67, 46, 36)","rgb(97, 147, 112)","rgb(251, 228, 43)", "rgb(236, 216, 226)", "rgb(211, 177, 119)", "rgb(41, 16, 127)", "rgb(134, 233, 158)", "rgb(232, 180, 143)", "rgb(117, 99, 116)", "rgb(74, 94, 63)", "rgb(222, 80, 84)", "rgb(49, 173, 222)", "rgb(205, 235, 7)"];
 var colores = colorlarg ;
 
 
@@ -31,13 +65,12 @@ return number
 
 //nuevo array
 
+
+
 var newarray = [];
 for (i=0;i<=5;i++){
 newarray.push(arrayst(colores)); 
 };
-
-
-
 
 
 //asignacion cuadrados
@@ -54,6 +87,32 @@ card3.style.background = newarray[2];
 card4.style.background = newarray[3];
 card5.style.background = newarray[4];
 card6.style.background = newarray[5];
+
+//console.log(easyHard);
+
+console.log(easyHard);
+
+if ( easyHard === true) {
+var elige = newarray;
+console.log(elige);
+var choo = Math.floor(Math.random()*elige.length);
+var nomber = elige[choo];
+elige.splice(choo, 0);                     
+console.log(nomber);
+return nomber
+
+
+} else if ( easyHard === false){
+var elige3 = newarray.splice(3,3);
+console.log(elige3);
+var choo3 = Math.floor(Math.random()*elige3.length);
+var nomber3 = elige3[choo3];
+elige3.splice(choo3, 0);  
+console.log(nomber3);                   
+return nomber3
+
+}
+
 
 
 
