@@ -15,6 +15,7 @@ btn.addEventListener("click", function(){
 hardflow();
 reset();
 desverifica();
+resetMensaje();
 
 
 });
@@ -24,6 +25,7 @@ btn.addEventListener("click", function(){
 easyflow();
 reset();
 desverifica();
+resetMensaje();
 
 
 });
@@ -32,6 +34,7 @@ var btn = document.querySelector(".newcol");
 btn.addEventListener("click", function(){
 reset();
 desverifica();
+resetMensaje();
 
 });
 
@@ -104,6 +107,7 @@ var choo = Math.floor(Math.random()*elige.length);
 var nomber = elige[choo];
 elige.splice(choo, 0);                     
 wintitle.innerHTML =nomber;
+pick6 = nomber;  
 console.log(newarray);
 console.log(elige3);
 
@@ -144,23 +148,39 @@ bord[i].classList.remove("elemal");
 function verifica(e){
 var elegido = e.target;
 var claseP = elegido.style.background;
-console.log("este es el 3 " + pick3);
-console.log (claseP);
-console.log("este es el 6 " + pick6);
- 
+var mensaje = document.querySelector(".msj");
+var tarjetas = document.querySelectorAll(".cards");
+
 // if verificador
+var fondo = document.querySelector(".conth1");
+var verdad= false;
+ if (pick6 == claseP){
+fondo.style.background= claseP;
+mensaje.innerHTML = "GANASTE !!!"
+tarjetas.style.background=claseP;
+verdad = true;
 
- if (pick3 === claseP || pick6 === claseP ){
-console.log(" eres un ganador");
+ } else if (pick3 == claseP){
+fondo.style.background= claseP;
+mensaje.innerHTML = "GANASTE !!!"
+tarjetas.style.background = claseP;
+verdad = true;
 
- } else if (pick3 != claseP || pick6 != claseP){
-console.log ("perdiste");
-elegido.classList.add('elemal');
-
+ } else { 
+			elegido.classList.add('elemal');
+			mensaje.innerHTML = "Intentalo de nuevo"
+  
  }//if cierre
 
 
 }; // verifica
 
 
+function resetMensaje(){
+var msj2 = document.querySelector("p");
+msj2.innerHTML = "Elige un Color"	
 
+var fondo3 = document.querySelector("#tap");
+fondo3.style.background= "cyan";
+
+}
