@@ -1,36 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adivina-Color</title>
-  <link rel="stylesheet" href="stilo.css">
-  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+   <link rel="stylesheet" href="normalize.css">
+    
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="stilo.css">
+     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+  
+
+
 </head>
 <body>
   <div class="lineup"></div>
-  <div id ="tap" class="conth1">
+  <div class="container-fluid conth1 centet2">
+  <div class="container ">
+  <div class="row ">
+    <div id ="tap" class="col-md-12">
       <div class="cent">
-      <h2>Bienvenido</h2>
-    <h1 class="elegido">Nan</h1>
-      <h2>Juego Adivina-Color</h2>
+          <h2>Bienvenido</h2>
+          <h1 class="elegido">Nan</h1>
+          <h2>Juego Adivina-Color</h2>
       </div>
   </div>
-
-<div class="navi">
-  <a class= "newcol">Nuevos Colores</a>
-  <p class="msj"> Elige un color </p>
-  <a class= "btneasy bot" value=1>Fácil</a>
-  <a class= "btnhard bot" value=1>Difícil</a>
-</div>
-  
-  <div class="container" onclick="verifica(event)">
-    <div class="cards c1"></div>
-    <div class="cards c2"></div>
-    <div class="cards c3"></div>
-    <div class="cards c4"></div>
-    <div class="cards c5"></div>
-    <div class="cards c6"></div>
   </div>
+  </div>
+  </div>
+
+<div class="container-fluid navi">
+  <div class="container">
+    <div class="row centet navi centet ">
+    <div class="col-md-3 col-md-offset-2 pi ">
+        <a class= "newcol pi">Nuevos Colores</a>
+      </div>
+    <div class="col-md-2 "> 
+        <p class="msj"> Elige un color </p>
+      </div>
+    <div class="col-md-1 pi "> 
+        <a class= "btneasy bot" value=1>Fácil</a>
+      </div>
+    <div class="col-md-1 pi "> 
+        <a class= "btnhard bot" value=1>Difícil</a>
+      </div>
+    <div class="col-md-3"> </div>
+    </div>
+  </div>
+</div> 
+<div class="container">
+  <div class="row">
+  <div class="col-md-8 col-md-offset-2 " onclick="verifica(event)">
+    <div class="col-md-2 col-sm-2 cards c1"></div>
+    <div class="col-md-2 col-sm-2 cards c2"></div>
+    <div class="col-md-2 col-sm-2 cards c3"></div>
+    <div class="col-md-2 col-sm-2 cards c4"></div>
+    <div class="col-md-2 col-sm-2 cards c5"></div>
+    <div class="col-md-2 col-sm-2 cards c6"></div>
+  </div>
+  </div>
+</div> 
 <script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 </html>
