@@ -149,6 +149,7 @@ function verifica(e){
 var elegido = e.target;
 var claseP = elegido.style.background;
 var mensaje = document.querySelector(".msj");
+var tetris = document.querySelector(".newcol");
 
 
 // if verificador
@@ -157,18 +158,20 @@ var verdad= false;
  if (pick6 == claseP){
 fondo.style.background= claseP;
 mensaje.innerHTML = "GANASTE !!!"
+tetris.innerHTML = "Jugar de Nuevo?"
 colorganador();
 verdad = true;
 
  } else if (pick3 == claseP){
 fondo.style.background= claseP;
 mensaje.innerHTML = "GANASTE !!!"
+tetris.innerHTML = "Jugar de Nuevo?"
 colorganador();
 verdad = true;
 
  } else { 
 			elegido.classList.add('elemal');
-			mensaje.innerHTML = "Intentalo de nuevo"
+			mensaje.innerHTML = "Inténtalo de nuevo"
   
  }//if cierre
 
@@ -187,8 +190,9 @@ bord1[i].style.background= claseP;
 function resetMensaje(){
 var msj2 = document.querySelector("p");
 msj2.innerHTML = "Elige un Color"	
-
 var fondo3 = document.querySelector("#tap");
 fondo3.style.background= "#FF6B89";
+var tetris2 = document.querySelector(".newcol");
+tetris2.innerHTML = "nuevos colores";
 
 }
