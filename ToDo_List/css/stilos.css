@@ -2,6 +2,7 @@
 body {
 	background: -webkit-gradient(linear, left top, right top, from(teal) , to(#D4F4DD));
 	background: linear-gradient(to right, teal , #D4F4DD);
+	font-family: 'Exo', sans-serif;
 }
 
 .pi{
@@ -13,13 +14,29 @@ height: 40px;
 color:white;
 background:#4B1D3F;
 margin:0 0;
+font-weight: 500;
+font-size: 2rem;
+padding-left: 20px;
+padding-top: 5px;
+
 }
 
 .card {
 	margin-top:150px;
 }
 
-p{
-	padding-left: 20px;
-	margin: auto;
+span{
+background-color:teal;
+width:40px;
+height: 40px;
+font-size: 20px;
+}
+
+.principal {
+	height: 50px;
+	background-color: #FCF7F9;
+	line-height: 2;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color:#333;
 }
