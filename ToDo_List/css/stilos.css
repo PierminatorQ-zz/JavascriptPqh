@@ -1,0 +1,25 @@
+
+body {
+	background: -webkit-gradient(linear, left top, right top, from(teal) , to(#D4F4DD));
+	background: linear-gradient(to right, teal , #D4F4DD);
+}
+
+.pi{
+	border:1px solid black;
+}
+
+.titulo{
+height: 40px;
+color:white;
+background:#4B1D3F;
+margin:0 0;
+}
+
+.card {
+	margin-top:150px;
+}
+
+p{
+	padding-left: 20px;
+	margin: auto;
+}
