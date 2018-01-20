@@ -12,7 +12,7 @@ body {
 .titulo{
 height: 40px;
 color:white;
-background:#4B1D3F;
+background:#007A7C;
 margin:0 0;
 font-weight: 500;
 font-size: 2rem;
@@ -25,18 +25,102 @@ padding-top: 5px;
 	margin-top:150px;
 }
 
-span{
-background-color:teal;
-width:40px;
-height: 40px;
-font-size: 20px;
-}
+
 
 .principal {
-	height: 50px;
+	padding-left: 23px;
+	padding-top: 0px;
+	height: 70px;
 	background-color: #FCF7F9;
-	line-height: 2;
-	font-size: 1.8rem;
-	font-weight: 400;
-	color:#333;
+	line-height: 2.6;
+	font-size: 2rem;
+	font-weight: 300;
+	color:#17BEBB;
+	border:none;
+	list-style:none
+		
+}
+
+
+.principal::-webkit-input-placeholder{
+	color:#E1E1E1;
+}
+
+.principal:-ms-input-placeholder{
+	color:#E1E1E1;
+}
+
+.principal::-ms-input-placeholder{
+	color:#E1E1E1;
+}
+
+.principal::placeholder{
+	color:#E1E1E1;
+}
+
+
+input:focus{
+	border: none;
+	outline : none;
+}
+
+.list-group-item {
+	padding:0px 45px;
+
+
+}
+
+#ta {
+	width: 50px;
+    height: 48px;
+    top: 0;
+    color: white;
+    text-align: center;
+    background:#D62246;
+    line-height: 3.4;
+    margin-right: 10px;
+
+
+ 
+
+}
+
+li{
+	height: 50px;
+	line-height: 3.4;
+	padding-left: 20px;
+
+-webkit-transition: all 0.8s;
+transition: all 0.8s;
+-webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+
+	
+}
+
+ 
+
+ #plus {
+ 	color:white;
+ 	margin-left:auto;
+ 	padding-left: 200px;
+
+ 	
+
+ }
+ .borra {
+ 	display:none;
+ 
+
+
+ }
+
+.tachado{
+	text-decoration: line-through;
+	color:#C2C2C2;
+		
+}
+
+i{
+
 }
