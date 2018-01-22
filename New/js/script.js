@@ -1,11 +1,12 @@
-var fotos = ["http://lorempixel.com/100/100/cats", "http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats","http://lorempixel.com/100/100/cats",]
+var fotos = ["http://lorempixel.com/100/100/cats/1", "http://lorempixel.com/100/100/cats/2","http://lorempixel.com/100/100/cats/3","http://lorempixel.com/100/100/cats/4","http://lorempixel.com/100/100/cats/5","http://lorempixel.com/100/100/cats/6"]
+ //var fotos =[1,2,3,4,5,6]
 
 
-for (i=0 ; i<fotos.length; i++){
-var ale = Math.floor(Math.random()*10);
-console.log(ale);
-var selected = fotos[ale];
+var carts = document.querySelectorAll(".cards");
+
+for (i=0 ; i<6; i++){
+var t = fotos[i];
+console.log(t);
+var tras = carts[i].innerHTML= "<img src='"  + t + "' alt= />";
+
  }
-
-
-console.log(selected);
