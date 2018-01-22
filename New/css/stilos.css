@@ -1,0 +1,26 @@
+body {
+	background-color:teal;
+}
+
+.container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.cards {
+	background:pink;
+	border:3px solid gray;
+	padding:10px;
+	width:50px;
+	color:white;
+	/*border-radius: 10%;*/
+	text-align: center;
+	-webkit-box-flex:1;
+	    -ms-flex:1;
+	        flex:1;
+
+}
